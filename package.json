@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nodemon server.js",
     "build": "next build",
+    "deploy": "npm install --legacy-peer-deps && npm run build"
     "start-dev": "cross-env NODE_ENV=production node server.js",
     "start": "next start",
     "populate": "node backend/populate/index.js"
